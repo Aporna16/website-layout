@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* just display grid dile kakj korbe na... At least koyta column ache ta bole dite hobe. system:> grid-template-columns*/
+            /* grid-template-columns:200px 200px 200px 200px; */
+            /* grid-template-columns:200px 100px 200px 300px; */
+            /* grid-template-columns:200px auto 200px 200px; */
+            /* grid-template-columns: repeat(4, 200px); */
+            /* grid-template-columns: repeat(4, 25%);  */
+            /* grid-template-columns: repeat(7, 25%); //jhamela hobe  */
+            /* grid-template-columns: repeat(7, 1fr); // fr mane fraction : joto gulo item ache sob equal space nibe */
+            /* grid-template-columns: repeat(3, 1fr) 100px; //first 3 coloumn equally devide kore niye last column 100px  */
+            /* grid-template-columns: repeat(3, 1fr) 2fr; // first 3 coloumn equally devide kore niye last column ager gulor double space niche   */
+            grid-template-columns: 200px 200px 200px;
+            justify-content: center;
+
+
+        }
+        .item{
+            border: 1px solid skyblue;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Grid Layout</h2>
+    <div class="container">
+        <!-- .item{Item-$}*20 -->
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div>
+        <div class="item">Item-15</div>
+        <div class="item">Item-16</div>
+        <div class="item">Item-17</div>
+        <div class="item">Item-18</div>
+        <div class="item">Item-19</div>
+        <div class="item">Item-20</div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- 
+justify-content holo overall content 
+justify-items available space wise item er space define hobe
+-->
+
+<!-- grid layout a column row borabor jinish thakbe.  -->
