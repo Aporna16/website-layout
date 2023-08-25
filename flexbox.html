@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Flexbox</title>
+    <style>
+        .container{
+            border: 3px dotted rgb(40, 192, 192);
+            display: flex;
+            /* ***justify-content use kora hoy Horizontal "__" er jonyo */
+            /* justify-content: center;_BOXBOXBOX_ */
+            /* justify-content: flex-end; ___BOXBOXBOX */
+            /* justify-content: space-between;  box gulor majhe gap dibe..BOX_BOX_BOX*/
+            /* justify-content: space-around; chardik theke miliye vag kore dise.first box er left ar last box er right a same space rakhche. majhe box gulor jonno double space. _BOX__BOX__BOX_*/
+            /* justify-content: space-evenly;  soman vabe sob gulor jonyo gap kore dise.._BOX_BOX_BOX_*/
+            /* justify-content: center; */
+
+            height: 400px;
+            /* ***Vertical "|" er jonnoy align-items use kora hoy...*/
+            /* align-items: flex-end;  height er end a chole jabe[_] */
+            /* align-items: flex-start; height er start ai thakbe*/
+            /* align-items: center; majhe thakbe[-] */
+            /* align-items: center; */
+
+            /* ***Flex uni-directional... */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; 
+            onek gulo box jokhon ekta div a thake, flex jehetu unidirectial wise kaj kore, wrap korle */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: nowrap; */
+    
+            align-items: stretch;
+
+
+            
+        }
+        .box{
+            font-size: 3ex;
+            font-weight: 700;
+            border: 3px dashed rgb(244, 85, 244);
+            width: 100px;
+            /* height: 100px; */
+        }
+        #box-2{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.box{Box-$}*3 -->
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div id="box-2" class="box">Box-2</div>
+        
+    </div>
+</body>
+</html>
+
+<!--  ::::layout::::=> https://www.ecurtisdesigns.com/wp-content/uploads/2014/02/layouts.jpg -->
+
+
+<!-- **** Kono div er modhe jinish ache. Oitake horizentally and vertically center korar system ki???
+Ans: justify-content: center; //horizental er jonyo
+align-items: center; //vertical er jonyo -->
