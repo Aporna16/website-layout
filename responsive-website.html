@@ -1,0 +1,79 @@
+<!-- Module: 8-7 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            max-width: 1280px;
+            margin: 0 auto;
+            border: 1px solid skyblue;
+        }
+
+        h1 {
+            /* font-size: 10vw;  viewport er unit viewport a jototuku unit ache tar 10% */
+            font-size: 10vw;
+        }
+
+        .tiger img {
+            /* width: 100%; boro choto korle img joto tuku oituku space nibe.  image fluid kora. boro image er scoll bar chole asle!*/
+            width: 100%;
+        }
+
+        .container-two {
+            display: flex;
+        }
+
+        .container-two .split {
+            width: 50%;
+        }
+
+        .split img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container-two {
+                /* flex-direction: column; */
+                flex-direction: column-reverse;
+            }
+
+            .container-two .split {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1> My Responsive Website</h1>
+    </section>
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/tiger.jpg" alt="">
+    </section>
+    <section>
+        <h2>Two Parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/food.png" alt="">
+            </div>
+            <div class="split"><img src="images/tiger.jpg" alt=""></div>
+        </div>
+    </section>
+    <!-- 
+        1. viewport(mobile ba laptop er screen kototuku te jinish ta dekhtechi) meta tag by default deya thake...
+        2. CSS relative unit   (1:17-3:00)
+        3. Responsive image (fluid image)   (3:01-5:25)
+        4. body max-width and margin auto   (5:27-7:19)
+        5. Responsive Split screen using flex  (7:21-12:37)
+        6. Column-reverse for small device  (12:40-13:26)
+     -->
+</body>
+
+</html>
